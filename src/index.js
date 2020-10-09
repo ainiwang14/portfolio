@@ -6,7 +6,8 @@ import * as serviceWorker from './serviceWorker';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import Header from './Common/Header';
 import Footer from './Common/Footer';
-import NotFound from './Common/NotFound';
+import NotFound from './NotFound/NotFound';
+import Contact from './Contact/Contact';
 
 const routing = (
   <Router>
@@ -16,7 +17,7 @@ const routing = (
       <Switch>
         <Route exact path='/' component={App} />
         <Route path='/projects' component={App} />
-        <Route path='/contacnt' component={App} />
+        <Route path='/contact' component={Contact} />
         <Route component={NotFound} />
       </Switch>
       <Footer />
