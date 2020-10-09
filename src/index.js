@@ -6,6 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import Header from './Common/Header';
 import Footer from './Common/Footer';
+import NotFound from './Common/NotFound';
 
 const routing = (
   <Router>
@@ -16,7 +17,7 @@ const routing = (
         <Route exact path='/' component={App} />
         <Route path='/projects' component={App} />
         <Route path='/contacnt' component={App} />
-        <Route component={App} />
+        <Route component={NotFound} />
       </Switch>
       <Footer />
     </div>
