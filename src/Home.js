@@ -1,7 +1,7 @@
 import React from 'react';
 import aileen from 'public/aileen.jpg';
 
-function Home() {
+const Home = () => {
   return (
     <div>
       About:
