@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Home from './Home';
 import * as serviceWorker from './serviceWorker';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import Header from './Common/Header';
@@ -17,8 +17,8 @@ const routing = (
       <Header />
       <hr/>
       <Switch>
-        <Route exact path='/' component={App} />
-        <Route path='/projects' component={App} />
+        <Route exact path='/' component={Home} />
+        <Route path='/projects' component={Home} />
         <Route path='/contact' component={Contact} />
         <Route component={NotFound} />
       </Switch>
