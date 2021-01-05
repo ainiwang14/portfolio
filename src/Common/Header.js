@@ -1,19 +1,36 @@
 import React from 'react';
+import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
+
+const Nav = styled.nav`
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10vh;
+`
+
+const Link = styled(NavLink)`
+    font-weight: 900;
+    font-size: 20px;
+    text-decoration: none;
+    color: #8775D9;
+    &:hover {
+        color: white;
+    }
+`
 
 const Header = () => {
     return (
-        <nav>
-            <NavLink exact activeClassName='active' to='/'>
+        <Nav>
+            <Link exact activeClassName='active' to='/'>
                 Home
-            </NavLink>
-            <NavLink exact activeClassName='active' to='/projects'>
+            </Link>
+            <Link exact activeClassName='active' to='/projects'>
                 Projects
-            </NavLink>
-            <NavLink exact activeClassName='active' to='/contact'>
+            </Link>
+            <Link exact activeClassName='active' to='/contact'>
                 Contact
-            </NavLink>
-        </nav>
+            </Link>
+        </Nav>
     )
 }
 

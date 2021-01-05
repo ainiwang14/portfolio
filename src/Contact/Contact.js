@@ -11,32 +11,36 @@ const Icon = styled(FontAwesomeIcon)`
 `
 
 const InfoCardContainer = styled.div`
+    height: 90vh;
+    padding: 0 5vh;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 `
 
 const InfoCard = styled.div`
     display: flex;
     flex-direction: column;
+    align-items: center;
+    font-size: 40px;
 `
 
 const Contact = () => {
     return (
-        <>
-            <InfoCardContainer>
-                <InfoCard>
-                    <Icon size='lg' icon={faEnvelope}/>
-                    E-Mail
-                </InfoCard>
-                <InfoCard>
-                    <Icon size='lg' icon={faLinkedinIn}/>
-                    Linkedin
-                </InfoCard>
-                <InfoCard>
-                    <Icon size='lg' icon={faGithub}/>
-                    GitHub
-                </InfoCard>
-            </InfoCardContainer>
-        </>
+        <InfoCardContainer>
+            <InfoCard>
+                <Icon size='lg' icon={faEnvelope}/>
+                E-Mail
+            </InfoCard>
+            <InfoCard>
+                <Icon size='lg' icon={faLinkedinIn}/>
+                Linkedin
+            </InfoCard>
+            <InfoCard>
+                <Icon size='lg' icon={faGithub}/>
+                GitHub
+            </InfoCard>
+        </InfoCardContainer>
     )
 }
 
