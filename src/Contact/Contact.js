@@ -6,7 +6,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 
-const EmailIcon = styled(FontAwesomeIcon)`
+const Icon = styled(FontAwesomeIcon)`
     color: pink;
 `
 
@@ -24,15 +24,15 @@ const Contact = () => {
         <>
             <InfoCardContainer>
                 <InfoCard>
-                    <EmailIcon size='lg' icon={faEnvelope}/>
+                    <Icon size='lg' icon={faEnvelope}/>
                     E-Mail
                 </InfoCard>
                 <InfoCard>
-                    <FontAwesomeIcon size='lg' icon={faLinkedinIn}/>
+                    <Icon size='lg' icon={faLinkedinIn}/>
                     Linkedin
                 </InfoCard>
                 <InfoCard>
-                    <FontAwesomeIcon size='lg' icon={faGithub}/>
+                    <Icon size='lg' icon={faGithub}/>
                     GitHub
                 </InfoCard>
             </InfoCardContainer>

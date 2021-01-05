@@ -9,7 +9,7 @@ const StyledFooter = styled.div`
 const Footer =() => {
     return (
         <StyledFooter>
-            <h1>poop</h1>
+            <h1>Test</h1>
         </StyledFooter>
     )
 }

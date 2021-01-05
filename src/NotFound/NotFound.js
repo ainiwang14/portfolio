@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import SadCat from './SadCat.jpg'
+import SadCat from '../media/SadCat.jpg'
 
 const FlexContainer = styled.div`
     min-height: 80vh;
