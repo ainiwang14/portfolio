@@ -8,6 +8,7 @@ import Header from './Common/Header';
 import Footer from './Common/Footer';
 import NotFound from './NotFound/NotFound';
 import Contact from './Contact/Contact';
+import Projects from './Projects/Projects';
 
 
 
@@ -18,7 +19,7 @@ const routing = (
       <hr/>
       <Switch>
         <Route exact path='/' component={Home} />
-        <Route path='/projects' component={Home} />
+        <Route path='/projects' component={Projects} />
         <Route path='/contact' component={Contact} />
         <Route component={NotFound} />
       </Switch>

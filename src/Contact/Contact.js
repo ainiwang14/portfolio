@@ -8,6 +8,14 @@ import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Icon = styled(FontAwesomeIcon)`
     color: pink;
+    &:hover {
+        color: white;
+    }
+`
+
+const Link = styled.a`
+    text-decoration: none;
+    color: purple;
 `
 
 const InfoCardContainer = styled.div`
@@ -18,7 +26,7 @@ const InfoCardContainer = styled.div`
     align-items: center;
 `
 
-const InfoCard = styled.div`
+const FlexContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,18 +36,24 @@ const InfoCard = styled.div`
 const Contact = () => {
     return (
         <InfoCardContainer>
-            <InfoCard>
-                <Icon size='lg' icon={faEnvelope}/>
-                E-Mail
-            </InfoCard>
-            <InfoCard>
-                <Icon size='lg' icon={faLinkedinIn}/>
-                Linkedin
-            </InfoCard>
-            <InfoCard>
-                <Icon size='lg' icon={faGithub}/>
-                GitHub
-            </InfoCard>
+            <Link href='mailto:ainiwang14@gmail.com'>
+                <FlexContainer>
+                    <Icon size='lg' icon={faEnvelope}/>
+                    E-Mail
+                </FlexContainer>
+            </Link>
+            <Link href='https://www.linkedin.com/in/aileen-wang-567265139/'>
+                <FlexContainer>
+                    <Icon size='lg' icon={faLinkedinIn}/>
+                    Linkedin
+                </FlexContainer>
+            </Link>
+            <Link href='https://github.com/ainiwang14'>
+                <FlexContainer>
+                    <Icon size='lg' icon={faGithub}/>
+                    GitHub
+                </FlexContainer>
+            </Link>
         </InfoCardContainer>
     )
 }
